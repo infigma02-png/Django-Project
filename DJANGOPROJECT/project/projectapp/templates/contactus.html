@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAK & ASH FORESTRY</title>
+    <link rel="stylesheet" href="{% static 'contactus.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<style>
+    body{
+        background: url("https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&w=600");
+    }
+    #contactus{
+        opacity: 0.9;
+        margin-top:10%;
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>OAK & ASH FORESTRY</h1>
+            </div>
+            <ul>
+                <li><a href="/" target="_blank">HOME</a></li>
+                <li><a href="/service">SERVICES</a></li>
+                <li><a href="/aboutus">ABOUT</a></li>
+                <li><a href="/workgallery">WORK GALLERY</a></li>
+                <li><a href="/contactus">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contactus">
+            <div data-aos="fade-up"  class="contact-container">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="SUBMIT">
+                </form>
+                {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                        <p class="{{ message.tags }}">{{ message }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            </section>-
+    </main>
+    <footer>
+        <div id="footer-content">
+            <div id="footer-logo">
+                <h1>OAK & ASH FORESTRY</h1>
+            </div>
+            <div id="footer-social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" />
+                </a>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <p>&copy; 2025 OAK & ASH FORESTRY. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                offset: 120, 
+                duration: 400,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
+    </script>
+    
+</body>
+</html>    

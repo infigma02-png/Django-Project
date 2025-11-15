@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAK & ASH FORESTRY</title>
+    <link rel="stylesheet" href="{% static 'workgallery.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+<!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>OAK & ASH FORESTRY</h1>
+            </div>
+            <ul>
+                <li><a href="/" target="_blank">HOME</a></li>
+                <li><a href="/service">SERVICES</a></li>
+                <li><a href="/aboutus">ABOUT</a></li>
+                <li><a href="/workgallery">WORK GALLERY</a></li>
+                <li><a href="/contactus">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="workgallery">
+            <div id="workgallery-heading">
+                <h1>WORK GALLERY</h1>
+                <p>View Our Latest Work </p>
+            </div>
+            <div id="cards">
+                <div data-aos="fade-up"  class="card0">
+                    <img src="https://images.pexels.com/photos/2310483/pexels-photo-2310483.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                   </div>
+                   <div data-aos="fade-up"  class="card1">
+                    <img src="https://images.pexels.com/photos/18942311/pexels-photo-18942311/free-photo-of-tree-logs-in-forest-in-autumn.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+                   </div>
+                   <div data-aos="fade-up"  class="card2">
+                    <img src="https://images.pexels.com/photos/7728688/pexels-photo-7728688.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+                   </div>
+                   <div data-aos="fade-up"  class="card3">
+                    <img src="https://images.pexels.com/photos/8820999/pexels-photo-8820999.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+                   </div>
+                   <div data-aos="fade-up"  class="card4">
+                    <img src="https://images.pexels.com/photos/4205986/pexels-photo-4205986.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                   </div>
+                   <div data-aos="fade-up"  class="card5">
+                    <img src="https://images.pexels.com/photos/9629949/pexels-photo-9629949.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                   </div>
+                   <div data-aos="fade-up"  class="card6">
+                    <img src="https://images.pexels.com/photos/5727745/pexels-photo-5727745.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                   </div>
+                   <div data-aos="fade-up"  class="card7">
+                    <img src="https://images.pexels.com/photos/296333/pexels-photo-296333.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                   </div>
+            </div>
+         </section>   
+    </main>
+    <footer>
+        <div id="footer-content">
+            <div id="footer-logo">
+                <h1>OAK & ASH FORESTRY</h1>
+            </div>
+            <div id="footer-social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" />
+                </a>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <p>&copy; 2025 OAK & ASH FORESTRY. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                offset: 120,    // Customize options here
+                duration: 400,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
+    </script>
+    
+</body>
+</html>

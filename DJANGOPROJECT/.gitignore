@@ -1,0 +1,20 @@
+# Python virtual environment
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Django DB
+*.sqlite3
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log

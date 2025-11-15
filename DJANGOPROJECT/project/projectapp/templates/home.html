@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAK & ASH FORESTRY</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav data-aos="fade-down">
+            <div id="logo">
+                <h1>OAK & ASH FORESTRY</h1>
+            </div>
+            <ul>
+                <li><a href="/" target="_blank" data-aos="fade-up">HOME</a></li>
+                <li><a href="/service" data-aos="fade-up" data-aos-delay="100">SERVICES</a></li>
+                <li><a href="/aboutus" data-aos="fade-up" data-aos-delay="200">ABOUT</a></li>
+                <li><a href="/workgallery" data-aos="fade-up" data-aos-delay="300">WORK GALLERY</a></li>
+                <li><a href="/contactus" data-aos="fade-up" data-aos-delay="400">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <video src="https://videos.pexels.com/video-files/2882118/2882118-uhd_2560_1440_24fps.mp4" loop muted autoplay></video>
+            <div id="intro-text" data-aos="fade-up" data-aos-duration="1500">
+                <h1>FORESTRY</h1>
+                <h1>&</h1>
+                <h1>LAND MANAGEMENT</h1>
+                <p>Since 1976</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div id="services-intro" data-aos="fade-up" data-aos-duration="1500">
+                <h1>FORESTRY SERVICES</h1>
+            </div>
+            <div id="cards">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://static.wixstatic.com/media/c22c23_4c5d4ae3ea2441adba9408edbb0061b6~mv2_d_4934_3289_s_4_2.jpg" alt="Forestry Mulching">
+                    <h1>Forestry Mulching</h1>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <img src="https://static.wixstatic.com/media/c22c23_bd91fe23a1134dc8acea2615e6522255~mv2_d_4934_3289_s_4_2.jpg" alt="Management Plans">
+                    <h1>Management Plans</h1>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <img src="https://static.wixstatic.com/media/c22c23_d1519c2d54bc43c88ffc55817fb57352~mv2_d_4934_3289_s_4_2.jpg" alt="Timber Harvesting">
+                    <h1>Timber Harvesting</h1>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <img src="https://static.wixstatic.com/media/c22c23_bd98bc6cfad14d7fb81c60f5d4a69c6e~mv2_d_4934_3289_s_4_2.jpg" alt="Tree Marking">
+                    <h1>Tree Marking</h1>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <img src="https://static.wixstatic.com/media/c22c23_499f1bb633144ef093cca278f41cdf5b~mv2_d_4934_3289_s_4_2.jpg" alt="Tree Planting">
+                    <h1>Tree Planting</h1>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <img src="https://static.wixstatic.com/media/c22c23_853a9b3f446c450c998c9566524e732a~mv2_d_4934_3289_s_4_2.jpg" alt="Land Clearing">
+                    <h1>Land Clearing</h1>
+                </div>
+            </div>
+            <div id="services-btn" data-aos="fade-up" data-aos-duration="1500">
+                <button><a href="/service">Read More About Our Services</a></button>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div id="testimonials-intro" data-aos="fade-up" data-aos-duration="1500">
+                <h1>TESTIMONIALS</h1>
+                <p>What Our Clients Are Saying</p>
+            </div>
+            <div id="testimonials-write" data-aos="fade-up" data-aos-duration="1500">
+                <div class="write" data-aos="fade-right">
+                    <img src="https://static.wixstatic.com/media/c22c23_2102bbe9f04f426bafafacf182d9dd5c~mv2_d_5760_3840_s_4_2.jpg/v1/crop/x_958,y_0,w_4426,h_2691/fill/w_1045,h_635,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/markus-spiske-MvY26rLIo6k-unsplash.jpg" alt="">
+                </div>
+                <div class="write">
+                    <p>
+                        “I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”
+                        Ryan Lewis, Lewis INC.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work-gallery">
+            <div id="work-gallery-intro" data-aos="fade-up" data-aos-duration="1500">
+                <h1>WORK GALLERY</h1>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item" data-aos="flip-left"><img src="https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+                <div class="item" data-aos="flip-left" data-aos-delay="100"><img src="https://images.pexels.com/photos/1459534/pexels-photo-1459534.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+                <div class="item" data-aos="flip-left" data-aos-delay="200"><img src="https://images.pexels.com/photos/4206118/pexels-photo-4206118.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+                <div class="item" data-aos="flip-left" data-aos-delay="300"><img src="https://images.pexels.com/photos/7407312/pexels-photo-7407312.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+                <div class="item" data-aos="flip-left" data-aos-delay="400"><img src="https://images.pexels.com/photos/3178540/pexels-photo-3178540.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content" data-aos="fade-up">
+            <div id="footer-logo">
+                <h1>OAK & ASH FORESTRY</h1>
+            </div>
+            <div id="footer-social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" />
+                </a>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <p>&copy; 2025 OAK & ASH FORESTRY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 4,
+                autoplay: true,
+                autoplayTimeout: 10000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
